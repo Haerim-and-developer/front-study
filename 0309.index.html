@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text">스터디 첫 수업!...</div>
+    <button onclick="document.write(4 * 5)">버튼을 눌러보세요!</button> 
+
+
+    <button onclick="printData()">날짜 확인 버튼!</button> 
+    <p id="date"></p>
+
+
+<script>
+function Alert(){
+    alert('자바스크립트 스터디 D+1');
+}
+
+function printData(){
+    document.getElementById("date").innerHTML = Date();
+}
+
+//var str = document.getElementById('text');
+//str.innerHTML = "이 문장으로 바뀌었습니다!";
+////로딩 데이터 지우고 자신의 데이터 출력
+
+    </script>
+</body>
+</html>

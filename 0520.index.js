@@ -27,19 +27,22 @@
 
 
 
-str = "실수!";
+str = "실수!"; //자동으로 전역 변수로 설정
 console.log(str);
 
 function StrictBlock() {
 
     "use strict"  // 함수 블록만을 strict 모드로 설정함.
 
-    try {
-        hello = '안녕'
-    } catch (error) {
+    try { //예외 처리를 원는 코드
+        hello = '안녕' //선언되지 않은 변수를 사용했기 때문에 오류발생;
+    } catch (error) { //예외가 발생했을 경우 실행되는 코드
         console.log(error);
+    } finally { //무조건 실행됨
+        console.log('이 부분은 에러가 나도 실행이 됩니당!');
     }
 
 }
 
 StrictBlock();
+
